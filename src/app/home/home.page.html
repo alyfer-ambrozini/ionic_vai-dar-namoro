@@ -1,0 +1,41 @@
+<ion-content>
+  <div class="foto">
+    <img src="assets/namoro.png" alt="">
+  </div>
+  <div class="alinhar">
+  <ion-item class="ion-no-padding">
+    <ion-label position="floating">Nome da 1ª Pessoa</ion-label>
+    <ion-input type="text" [(ngModel)]="nome1"></ion-input>
+  </ion-item>
+  <div class="centralizar">
+    <div class="coracao">
+      <img src="assets/amar.png" alt="">
+    </div>
+    <div class="mais">
+      <img src="assets/mais.png" alt="">
+    </div>
+  </div>
+</div>
+  <ion-item class="ion-no-padding">
+    <ion-label position="floating">Nome da 2ª Pessoa</ion-label>
+    <ion-input type="text" [(ngModel)]="nome2"></ion-input>
+  
+  </ion-item>
+
+  <ion-button (click)="calcular()" expand="expand" color="danger" id="abrir-resposta">Compatibilidade</ion-button>
+
+  <ion-modal id="resposta" #modal trigger="abrir-resposta">
+    <ng-template>
+      <div class="wrapper">
+       
+         
+         <div class="porc">
+         <img src="assets/amar.png" alt="">
+       </div> 
+       <h1>{{porcentagem}}%</h1>
+        <h2>AÍ TAMO FALANDO DA ELITE</h2>
+        <img src="assets/casi.png" alt="">
+      </div>
+    </ng-template>
+  </ion-modal>
+</ion-content>

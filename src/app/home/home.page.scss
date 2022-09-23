@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+
+ion-content {
+  --padding-start: 32px;
+  --padding-top: 32px;
+  --padding-end: 32px;
+  --background: linear-gradient(to bottom, #D406C0, #fff);  
+}
+
+.alinhar{
+  margin-top: 50px;
+}
+.centralizar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto {
+  position: static;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.coracao {
+  margin-top: 38px;
+  width: 80px;
+  height: 80px;
+}
+
+.mais {
+  position: relative;
+  top: -55px;
+  width: 30px;
+  height: 30px;
+}
+
+ion-item {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  border-radius: 60px;
+
+}
+
+ion-button {
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 32px;
+  font-size: 18px;
+  margin-top: 90px;
+  margin-left: 23px;
+}
+
+#resposta {
+  --width: fit-content;
+  --height: fit-content;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --text-align: center;
+  z-index: -2;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  h1{
+    position: relative;
+    top: -80px;
+  }
+}
+
+.porc {
+  width: 80px;
+  height: 80px;
+}
